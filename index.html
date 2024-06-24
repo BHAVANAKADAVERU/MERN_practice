@@ -4,37 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
     <base href="Images/" target="_blank">
 </head>
 <body>
     <!--header part for login and brand logo-->
     <header>
         <div class="top">
-        <a href=""><h1>make<i>my</i>trip</h1></a>
-        <div class="login">
-         <a href="login.html"><img src="account.png" heigth="50px" width="50ppx">
-         <br>
-         <label>Login</label></a>
-        </div>
-         <br>
-         <br>
-         <label for="lang">Choose a language:</label>
-
-         <select name="lang" id="langs">
-         <option value="English">English</option>
-         <option value="Hindi">Hindi</option>
-         <option value="Telugu">Telugu</option>
-         <option value="Tamil">Tamil</option>
-         </select>
-         <button id="apply">apply</button>
+          <a href="" id="tit"><h1>make<i>my</i>trip</h1></a>
+          
+           <br>
+           <br>
+          
+          <div class="login">
+            <div>
+                <a href="login.html"><img src="user.webp" heigth="70px" width="70ppx" >
+                <br>
+                <label>Login</label></a>
+            </div>
+            <div>
+            <p>Choose a language:</p>
+          <select name="lang" id="langs">
+          <option value="English">English</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Telugu">Telugu</option>
+          <option value="Tamil">Tamil</option>
+          </select>
+          <button id="apply">apply</button>
+          </div>
         </div>
     </header>
 
     <!--horizontal rule on page to indicate section-->
-    <hr>
+    
 
     <!--section for "services available"-->
-    <section>
+    <section class="midsec">
         <div>
             <a href=""><img src="fligths.png" heigth="50px" width="50ppx"></a>
             <h3>flights</h3>
@@ -57,15 +62,16 @@
     </section>
 
 
-    <hr>
+    
 
 
     <!-- selection of type of trip and timeline for flights-->
    <div class="mid">
-        <form>
-            <pre><input type="radio"><label><b>One Way</b></label>   <input type="radio"><label><b>Round trip</b></label>  <input type="radio"><label><b>Multi city</b></label> </pre>
+        <form  id="radio">
+            <pre><input type="radio" id="l1" name="rad"><label for="l1"><b>One Way</b></label>   <input type="radio"  id="l2" name="rad"><label for="l2"><b>Round trip</b></label>  <input type="radio"  id="l3"  name="rad"><label for="l3"><b>Multi city</b></label> </pre>
         </form>
         <br>
+      <div id="trip">
         <div  class="city">
             <p>From</p>
            <H2>Delhi</H2>
@@ -89,13 +95,16 @@
             <H2>1 Traveller</H2>
             <p>Economy/premium Economy</p>
          </div>
+      </div>
 
-
-    <hr>
+    </div>
+    
 
    <div class="fare">
     <!--selection of travel fare-->
+    <div id="splfare">
     <h2><b>select a special fare</b></h2>
+    </div>
     <br>
     <div class="regular"> 
     <label for="id1">
@@ -115,8 +124,9 @@
 
     <br>
      
-    <label for="id3">
+    
     <div class="senior">
+        <label for="id3">
     <input type="radio" id="id3" name="radtype"><b>Senior Citizen</b>
     <p>Upto ₹600 off</p>
     </label> 
@@ -142,17 +152,16 @@
         <p>Upto ₹600 off</p>
     </label>
     </div>
+
     <br>
+
     <div>
     <button class="btn">Search</button>
    </div>
+</div>
 
     <br>
-    <hr>
-
-
-    <!--footer part with network media and copyrigths-->
-    <footer>
+    <footer id="bottom">
         <pre>
        <a href=""><img src="twitter.png" heigth="50px" width="50px"></a>    <a href=""><img src="facebook.png" heigth="50px" width="50px"></a>   <a href=""><img src="insta.png"  heigth="60px" width="60px"></a>
        </pre>
@@ -161,5 +170,8 @@
       Country India USA UAE
       </p>
     </footer>
+
+
+    
 </body>
 </html>
